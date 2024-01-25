@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <title>To do Application</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1>To Do Application</h1>
+
+        <div class="form">
+            <i class='bx bxs-chevrons-down bx-flip-horizontal' onclick="hiden()"></i>
+            <input type="text" class="input" placeholder="What needs to be done ?"/>
+            <input type="submit" class="add">
+        </div>
+
+            <div class="tasks">
+                
+            </div>
+
+            <div id="btn" class="btn">
+                <div class="nbr"><h3 class="Total"></h3></div>
+                <input type="submit" onclick="getTasksLS()" value="All">
+                <input type="submit" onclick="filterActive()" value="Active">
+                <input type="submit" onclick="filterComleted()" value="Completed">
+                <input type="submit" onclick="ClearCompleted()" value="Clear Completed">
+            </div>
+
+            
+            
+
+    </div>
+<script src="index.js"></script>
+
+
+</body>
+</html>
